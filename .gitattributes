@@ -1,0 +1,10 @@
+# Ensure all text files use LF line endings
+* text=auto
+
+# Scripts should always use LF
+*.sh text eol=lf
+*.py text eol=lf
+*.java text eol=lf
+
+# Batch files should always use CRLF
+*.bat text eol=crlf

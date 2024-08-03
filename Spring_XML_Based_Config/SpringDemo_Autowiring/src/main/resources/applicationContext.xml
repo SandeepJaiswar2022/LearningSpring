@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="alien" class="com.learning.Alien" autowire="byType">
+<!--        <property name="computer" ref="laptop"/>-->
+        <property name="id" value="2"/>
+    </bean>
+    <bean id="laptop" class="com.learning.Laptop"/>
+    <bean id="desktop" class="com.learning.Desktop" primary="true" />
+
+</beans>
